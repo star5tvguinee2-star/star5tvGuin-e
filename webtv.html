@@ -3,22 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web TV – STAR5TV Guinée</title>
+  <title>Star5TV Guinée – WebTV Officielle</title>
   <style>
     body {
-      background-image: url('logo-gradient.png'); /* Remplace par le nom exact de ton image si différent */
+      background-image: url('background-star5tv.png'); /* Remplace par le bon nom si différent */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      color: #fff;
+      backdrop-filter: brightness(0.8);
+      color: white;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 30px;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
     }
 
     h1 {
+      margin: 0;
       font-size: 2.5rem;
-      margin-bottom: 20px;
+    }
+
+    main {
+      padding: 30px;
     }
 
     iframe {
@@ -26,22 +37,40 @@
       max-width: 720px;
       height: 400px;
       border: none;
-      margin-bottom: 20px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
     a {
-      color: #00ffcc;
-      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
       font-size: 1.1rem;
+      color: #ffcc00;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: rgba(255, 204, 0, 0.8);
+      color: #000;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenue sur STAR5TV Guinée</h1>
 
-  <!-- Mets ici ton lien YouTube ou autre contenu vidéo -->
-  <iframe src="https://www.youtube.com/embed/TON_ID_DE_VIDEO" allowfullscreen></iframe>
+  <header>
+    <h1>Bienvenue sur STAR5TV Guinée</h1>
+  </header>
 
-  <p><a href="https://www.youtube.com/@TONCHAINE" target="_blank">Voir notre chaîne YouTube</a></p>
+  <main>
+    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=Star5tvGuinée-w4c" allowfullscreen></iframe>
+
+    <p><a href="https://www.youtube.com/@Star5tvGuin%C3%A9e-w4c" target="_blank">Voir notre chaîne YouTube</a></p>
+  </main>
+
 </body>
 </html>
